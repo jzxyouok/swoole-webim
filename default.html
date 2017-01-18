@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link href="css/index.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript">
+ 	$(document).ready(function(){
+  		$('#goto').click(function(){
+  			
+  			var username = $("#username").val();
+  			if(username == ''){
+  				alert('请输入昵称!');
+  				return;
+  			}
+  			document.cookie =  "swuName="+ escape (username);
+  			window.location = 'index.html'
+  		});
+  	});
+  </script>
+</head>
+<body class="center">
+<br>
+<br>
+<br>
+输入昵称进入聊天室：&nbsp;<input  type="text" id="username">
+<button id="goto">进入</button>
+</body>
+</html>

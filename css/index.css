@@ -1,0 +1,23 @@
+.center {
+      text-align: center;
+}
+div {
+      margin-top: 0px;
+}
+ #title {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px;
+}
+.content{
+    margin-top: 10px;
+    height: 500px;
+    width: 800px;
+    text-align: center;
+}
+.cleft {
+    width: 120px;
+}
+.cright {
+    float: right;
+}
